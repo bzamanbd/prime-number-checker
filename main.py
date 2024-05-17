@@ -1,14 +1,11 @@
-def prime_checker(num):
-    # num = 13
-    if num >1:
-        for x in range(2, (num//2)+1):
-            if (num % x ) == 0:
-                print(f"{num} is not prime number")
+def check_prime_number(num:int):
+    if num <=2:
+        print('number must be more than 2')
+    if num >2:
+        for i in range(2, (num-1)):
+            if(num % i) == 0:
+                print(f"{num} is not a prime number")
                 break
         else:
-            print(f"{num} is a prime number") 
-    else:
-        print(f"{num} is not a prime number") 
-
-prime_checker(11) 
-
+            print(f"{num} is a prime number")
+check_prime_number(11)
