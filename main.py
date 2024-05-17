@@ -1,4 +1,4 @@
-def check_prime_number(num:int):
+def check_prime_number(num:int)->None:
     if num <=2:
         print('number must be more than 2')
     if num >2:
@@ -8,4 +8,5 @@ def check_prime_number(num:int):
                 break
         else:
             print(f"{num} is a prime number")
+
 check_prime_number(11)
